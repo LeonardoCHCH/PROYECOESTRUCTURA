@@ -28,6 +28,7 @@ void menu() {
                 break;
             case 4:
                 cout << "Comenzando transporte de productos" << endl;
+                ordenarArticulosEnCamiones();
                 break;
             case 5:
                 cout << "Saliendo del sistema" << endl;
@@ -41,6 +42,8 @@ void menu() {
 }
 
 int main() {
+    mostrarRegiones();
+    crearCamiones();
     menu();
     return 0;
 }
